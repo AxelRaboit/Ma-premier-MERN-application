@@ -1,0 +1,23 @@
+GET http://localhost:3001/api/rooms
+
+###
+
+POST http://localhost:3001/api/rooms HTTP/1.1
+content-type: application/json
+
+{
+  "name": "secret suite"
+}
+
+###
+
+GET http://localhost:3001/api/rooms/622138f44f44601194dce52d
+
+###
+
+PATCH http://localhost:3001/api/rooms/622138f44f44601194dce52d HTTP/1.1
+content-type: application/json
+
+{
+  "name": "suite 300"
+}
