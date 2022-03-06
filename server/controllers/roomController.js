@@ -33,7 +33,7 @@ export const getRoom = async (req, res) => {
     const room = await RoomModel.find({_id: req.params.id})
 
     try {
-        res.send(room);
+        res.send(room[0]);
     }
     catch (err) {
         res.status(500).send(err)

@@ -6,7 +6,8 @@ POST http://localhost:3001/api/rooms HTTP/1.1
 content-type: application/json
 
 {
-  "name": "secret suite"
+  "name": "new suite",
+  "maxPersons": 2
 }
 
 ###
@@ -15,9 +16,13 @@ GET http://localhost:3001/api/rooms/622138f44f44601194dce52d
 
 ###
 
-PATCH http://localhost:3001/api/rooms/622138f44f44601194dce52d HTTP/1.1
+PATCH http://localhost:3001/api/rooms/6221e03295442720dc290e5d HTTP/1.1
 content-type: application/json
 
 {
-  "name": "suite 300"
+  "name": "next suite"
 }
+
+###
+
+DELETE http://localhost:3001/api/rooms/6221e00995442720dc290e5c HTTP/1.1

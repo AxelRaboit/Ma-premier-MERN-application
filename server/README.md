@@ -18,19 +18,22 @@ npm install dotenv@8.2.0 express@4.17.1 mongoose@5.10.7
 npm install -D nodemon@2.0.4
 ```
 
-## Ajout d'un script dans le fichier package.json
+## Ajout d'un script dans le fichier package.json de server
 
 ```
-"scripts": {
-    "dev": "nodemon server.js"
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
 ```
-Pour pouvoir executer la commande suivante
-```shell
-npm run dev
-```
+
 ## Demarrer le server via nodemon
 ```shell
-npm run dev
+npm start
 ```
-(Cette commande est un alias de: nodemon server.js, que nous avons configuré dans le package.json)
+(Cette commande est un alias de: node server.js, que nous avons configuré dans le package.json)
