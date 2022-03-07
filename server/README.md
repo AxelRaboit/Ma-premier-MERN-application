@@ -18,7 +18,7 @@ npm install dotenv@8.2.0 express@4.17.1 mongoose@5.10.7
 npm install -D nodemon@2.0.4
 ```
 
-## Ajout d'un script dans le fichier package.json de server
+## Ajout d'un script dans le fichier package.json
 
 ```
   "scripts": {
