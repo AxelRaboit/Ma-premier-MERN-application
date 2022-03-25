@@ -1,3 +1,13 @@
+## Reprise du projet
+```shell
+npm install
+```
+- Create .env
+```
+PORT=300
+MONGODB=mongodb+srv://<username>:<password>@<mongodbname>.p1asb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+```
+
 ## Creation du fichier package.json
 ```shell
 npm init
