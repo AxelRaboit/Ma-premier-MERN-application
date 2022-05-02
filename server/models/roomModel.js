@@ -15,12 +15,12 @@ const RoomSchema = new mongoose.Schema({
                 throw new Error('La chambre doit pouvoir accueillir au moins une personne.')
             }
         }
-    },
+    }/* ,
     promotional: {
         type: Boolean,
-        required: false,
+        required: true,
         default: false
-    },
+    }, */
 })
 
 const RoomModel = mongoose.model('Room', RoomSchema)
