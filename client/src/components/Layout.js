@@ -40,6 +40,12 @@ const ARLayout = ({ children }) => {
                             Contact
                         </Link>
                     </Menu.Item>
+
+                    <Menu.Item key='5'>
+                        <Link to='/add-room'>
+                            Ajouter une chambre
+                        </Link>
+                    </Menu.Item>
                 </Menu>
             </Header>
             <Content style={contentStyle} children={children}/>
